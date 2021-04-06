@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-  <script defer src="js/script.js"></script>
+
   <title>eShop Vue</title>
 </head>
+
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <div class="wrapper">
+      <div class="goods-list">
+        <app-item v-for='(item, i) in goods' :goods='item' :data-id='i'></app-item>
+      </div>
+      <div class="app-cart">
+          <div class="app-cart-head">Корзина</div>
+          <div class="app-cart-main"></div>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
