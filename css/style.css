@@ -1,3 +1,131 @@
-.body {
-	background-color: #fff;
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana;
+}
+
+.shop-wrapper {
+  display: flex;
+}
+
+.shop-catalog {
+  flex: 1;
+  margin: 3px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.shop-catalog-item {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #838383;
+  border-radius: 5px;
+  background-color: #c2c2c2;
+}
+
+.shop-catalog-item-title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.shop-catalog-item-price {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.shop-catalog-item-article {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.shop-catalog-item-btn,
+.shop-cart-del-btn,
+.shop-cart-buy-btn {
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #131316;
+  outline: none;
+  background-color: #384647;
+  color: #ffffff;
+  transition: all ease 0.5s;
+}
+
+.shop-catalog-item-btn:hover,
+.shop-cart-del-btn:hover,
+.shop-cart-buy-btn:hover {
+  background-color: #516e70;
+  cursor: pointer;
+}
+
+.shop-catalog-item-btn:active,
+.shop-cart-del-btn:active,
+.shop-cart-buy-btn:active {
+  color: #ff0000;
+}
+
+.shop-cart-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 3px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.shop-cart-title {
+  font-size: 2.5rem;
+}
+
+.shop-cart-total {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.shop-cart-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.shop-cart-main p {
+  margin: 0;
+}
+
+.shop-cart-del-btn {
+  margin-left: 30px;
+}
+
+.shop-cart-mange-wrapper {
+  float: right;
+  margin: 3px;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

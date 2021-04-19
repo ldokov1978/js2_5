@@ -7,13 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/script.js"></script>
+
   <title>eShop Vue</title>
 </head>
 
 <body>
-
-
+  <div id="app">
+    <div class="shop-wrapper">
+      <div class="shop-catalog">
+        <shop-catalog-item v-for="product in products" :data-article="product.article" :product_data="product"
+          @send_data_to_cart="addDataToCart" />
+      </div>
+      <div class="shop-cart-wrapper">
+        <div class="shop-cart-title">Корзина</div>
+        <div class="shop-cart-total">Товаров в корзине на сумму: {{ total_cart_price }} &#8381;
+          <hr>
+        </div>
+        <shop-cart-main v-for="product in cart" :cart_items="product" @remove_data_from_cart="removeDataFromCart" />
+      </div>
+    </div>
+    <div class="shop-cart-mange-wrapper">
+      <!-- <shop-cart-buy-btn /> -->
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
