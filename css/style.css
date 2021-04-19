@@ -4,12 +4,12 @@ body {
   font-family: Verdana;
 }
 
-.wrapper {
+.shop-wrapper {
   display: flex;
 }
 
-.goods-list{
-  flex: 2;
+.shop-catalog {
+  flex: 1;
   margin: 3px;
   padding: 20px;
   box-sizing: border-box;
@@ -20,7 +20,7 @@ body {
   border: 1px solid rgba(128, 128, 128, 0.5);
 }
 
-.goods-item {
+.shop-catalog-item {
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -34,18 +34,28 @@ body {
   background-color: #c2c2c2;
 }
 
-.goods-item-title {
+.shop-catalog-item-title {
+  display: block;
+  margin-bottom: 20px;
   font-weight: normal;
   font-size: 2rem;
 }
 
-.goods-item-price {
+.shop-catalog-item-price {
   display: block;
+  margin-bottom: 20px;
   font-size: 1.5rem;
 }
 
-.app-button {
-  margin: 15px 0 0 0;
+.shop-catalog-item-article {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.shop-catalog-item-btn,
+.shop-cart-del-btn,
+.shop-cart-buy-btn {
   padding: 10px;
   box-sizing: border-box;
   font-size: 0.8rem;
@@ -57,17 +67,25 @@ body {
   transition: all ease 0.5s;
 }
 
-.app-button:hover  {
+.shop-catalog-item-btn:hover,
+.shop-cart-del-btn:hover,
+.shop-cart-buy-btn:hover {
   background-color: #516e70;
   cursor: pointer;
 }
 
-.app-button:active  {
+.shop-catalog-item-btn:active,
+.shop-cart-del-btn:active,
+.shop-cart-buy-btn:active {
   color: #ff0000;
 }
 
-.app-cart {
+.shop-cart-wrapper {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 3px;
   padding: 20px;
   box-sizing: border-box;
@@ -75,6 +93,39 @@ body {
   border: 1px solid rgba(128, 128, 128, 0.5);
 }
 
-.app-cart-head {
+.shop-cart-title {
   font-size: 2.5rem;
+}
+
+.shop-cart-total {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.shop-cart-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.shop-cart-main p {
+  margin: 0;
+}
+
+.shop-cart-del-btn {
+  margin-left: 30px;
+}
+
+.shop-cart-mange-wrapper {
+  float: right;
+  margin: 3px;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

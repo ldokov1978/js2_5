@@ -1,8 +1,11 @@
 [
-  { "title": "Рубашка", "price": 850 },
-  { "title": "Носки", "price": 50 },
-  { "title": "Куртка", "price": 15350 },
-  { "title": "Ботинки", "price": 7500 },
-  { "title": "Брюки", "price": 4500 },
-  { "title": "Шляпа", "price": 1200 }
+  { "title": "Рубашка", "price": 850, "article": "P1" },
+  { "title": "Носки", "price": 50, "article": "P2" },
+  { "title": "Куртка", "price": 15350, "article": "P3" },
+  { "title": "Ботинки", "price": 7500, "article": "P4" },
+  { "title": "Брюки", "price": 4500, "article": "P5" },
+  { "title": "Шляпа", "price": 1200, "article": "P6" },
+  { "title": "Шнурки", "price": 25, "article": "P7" },
+  { "title": "Галстук", "price": 1000, "article": "P8" },
+  { "title": "Кроссовки", "price": 5754, "article": "P9" }
 ]
